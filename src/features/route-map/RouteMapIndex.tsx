@@ -51,13 +51,13 @@ const RouteMapIndex: React.FC<RouteMapIndexProps> = ({ airports }) => {
 								</p>
 							</div>
 							{from &&
-								to.map((airport) => {
+								to.map((airport): JSX.Element => {
 									return (
 										<a className="panel-block">
 											<span className="panel-icon">
 												<i className="fas fa-plane-departure" aria-hidden="true" />
 											</span>
-											{airport.name} - {GoogleMapsFactory.ToDistance(from!, airport)} Miles
+											{airport.name} - {GoogleMapsFactory.ToDistance(from, airport)} Miles
 										</a>
 									);
 								})}
