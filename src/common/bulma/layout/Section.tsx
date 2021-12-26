@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-const Section: React.FC<SectionProps> = ({ children, options }) => {
+const Section: React.FC<SectionProps> = ({ children, options = '' }) => {
 	return <div className={`section ${options}`}>{children}</div>;
 };
 
