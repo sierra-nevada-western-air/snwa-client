@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Column, Columns, Container, Section } from '../../common/bulma';
 import Map from '../../common/google-maps/Map';
 import GoogleMapsFactory from '../../common/google-maps/GoogleMapsFactory';

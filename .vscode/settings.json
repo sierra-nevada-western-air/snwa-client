@@ -4,5 +4,5 @@
 	"files.eol": "\r\n",
 	"editor.bracketPairColorization.enabled": true,
 	"editor.guides.bracketPairs": "active",
-	"auto-close-tag.disableOnLanguage": ["javascript", "typescript"]
+	"auto-close-tag.disableOnLanguage": ["javascriptreact", "typescriptreact"]
 }

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-const Content: React.FC<ContentProps> = ({ children, options }) => {
+const Content: React.FC<ContentProps> = ({ children, options = '' }) => {
 	return <div className={`content ${options}`}>{children}</div>;
 };
 

@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import Icon from '../../common/bulma/elements/Icon';
+import { ReactNode, useEffect, useState } from 'react';
+import { Icon } from '../../common/bulma';
 import GoogleMapsFactory from '../../common/google-maps/GoogleMapsFactory';
 import AirportResponse from '../airports/models/AirportResponse';
 import RouteMapSearchPanel from './RouteMapSearchPanel';
@@ -41,7 +41,10 @@ const RouteMapSearchArticle: React.FC<RouteMapSearchArticleProps> = ({ airports,
 					<Icon options="is-left" iconName="fa-search" ariaHidden={true} />
 				</p>
 			</div>
-			<RouteMapSearchPanel from={from} to={to} />
+			{from &&
+				to.map((toAirport): ReactNode => {
+					return <RouteMapSearchPanel departure={from} arrival={toAirport} />;
+				})}
 		</article>
 	);
 };

@@ -1,28 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PanelIcon } from '../../common/bulma';
 import GoogleMapsFactory from '../../common/google-maps/GoogleMapsFactory';
+import SitePaths from '../../router/sitePaths';
 import AirportResponse from '../airports/models/AirportResponse';
 
-const RouteMapSearchPanel: React.FC<RouteMapSearchPanelProps> = ({ from, to }) => {
+const RouteMapSearchPanel: React.FC<RouteMapSearchPanelProps> = ({ departure, arrival }) => {
 	return (
-		<React.Fragment>
-			{from &&
-				to.map((airport) => {
-					return (
-						<a className="panel-block">
-							<span className="panel-icon">
-								<i className="fas fa-plane-departure" aria-hidden="true" />
-							</span>
-							{airport.name} - {GoogleMapsFactory.ToDistance(from, airport)} Miles
-						</a>
-					);
-				})}
-		</React.Fragment>
+		<Link className="panel-block" to={SitePaths.Home}>
+			<PanelIcon iconName="fa-plane-departure" />
+			{arrival.name} - {GoogleMapsFactory.ToDistance(departure, arrival)} Miles
+		</Link>
 	);
 };
 
 interface RouteMapSearchPanelProps {
-	from: AirportResponse | undefined;
-	to: Array<AirportResponse>;
+	departure: AirportResponse;
+	arrival: AirportResponse;
 }
 
 export default RouteMapSearchPanel;

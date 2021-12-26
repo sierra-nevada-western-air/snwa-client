@@ -27,6 +27,10 @@ const Header: React.FC = () => {
 						<Link to={SitePaths.RouteMap} className="navbar-item has-text-primary">
 							Route Map
 						</Link>
+
+						<Link to={SitePaths.TravelInformationIndex} className="navbar-item has-text-primary">
+							Travel Information
+						</Link>
 					</div>
 
 					<div className="navbar-end">
