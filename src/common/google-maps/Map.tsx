@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Container, Hero } from '../bulma';
+import { Container } from '../bulma';
 
 const Map: React.FC<MapProps> = ({ markers }) => {
 	const elementRef = useRef<HTMLDivElement>(null);
@@ -22,9 +22,9 @@ const Map: React.FC<MapProps> = ({ markers }) => {
 
 	return (
 		<Container>
-			<Hero options="is-large">
+			<div className="hero is-large">
 				<div ref={elementRef} className="hero-body" />
-			</Hero>
+			</div>
 		</Container>
 	);
 };

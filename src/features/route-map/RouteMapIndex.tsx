@@ -1,13 +1,9 @@
 import Map from '../../common/google-maps/Map';
+import MarkerFactory from '../../common/google-maps/MarkerFactory';
 import AirportResponse from '../airports/models/AirportResponse';
 
 const RouteMapIndex: React.FC<RouteMapIndexProps> = ({ airports }) => {
-	const markers: Array<google.maps.Marker> = [
-		new google.maps.Marker({
-			position: { lat: 39.3023103, lng: -94.7211899 },
-			title: 'Kansas City - MCI',
-		}),
-	];
+	const markers = airports.map((airport) => MarkerFactory.ToMarker(airport));
 
 	return <Map markers={markers} />;
 };
