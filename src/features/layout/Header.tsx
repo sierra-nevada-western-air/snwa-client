@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import Icon from '../../common/bulma/elements/Icon';
+import SitePaths from '../../router/sitePaths';
 
 const Header: React.FC = () => {
 	return (
@@ -20,7 +22,9 @@ const Header: React.FC = () => {
 					<div className="navbar-start">
 						<a className="navbar-item">Home</a>
 
-						<a className="navbar-item">Documentation</a>
+						<Link to={SitePaths.RouteMap} className="navbar-item">
+							Route Map
+						</Link>
 					</div>
 
 					<div className="navbar-end">

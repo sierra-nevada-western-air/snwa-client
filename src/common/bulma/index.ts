@@ -1,6 +1,5 @@
 import Content from './elements/Content';
 import Container from './layout/Container';
+import Hero from './layout/Hero';
 
-const components = { Content, Container };
-
-export default components;
+export { Content, Container, Hero };
