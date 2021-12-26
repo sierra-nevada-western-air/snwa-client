@@ -1,9 +1,9 @@
 import { Column, Columns, Container, Section, Title, TitleOptions } from '../../../common/bulma';
-import Aircraft from './Aircraft';
+import IAircraft from './IAircraft';
 import AircraftArticle from './AircraftArticle';
 
 const AircraftIndex: React.FC = () => {
-	const aircraft: Array<Aircraft> = [
+	const aircraft: Array<IAircraft> = [
 		{
 			name: 'Boeing 737-600',
 			capacity: 120,

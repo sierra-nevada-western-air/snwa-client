@@ -1,5 +1,5 @@
 import { Column, Columns, Content, Figure, Subtitle, Title, TitleOptions } from '../../../common/bulma';
-import Aircraft from './Aircraft';
+import IAircraft from './IAircraft';
 
 const AircraftArticle: React.FC<AircraftArticleProps> = ({ aircraft }) => {
 	return (
@@ -33,7 +33,7 @@ const AircraftArticle: React.FC<AircraftArticleProps> = ({ aircraft }) => {
 };
 
 interface AircraftArticleProps {
-	aircraft: Aircraft;
+	aircraft: IAircraft;
 }
 
 export default AircraftArticle;

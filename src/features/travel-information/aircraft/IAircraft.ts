@@ -1,6 +1,6 @@
 import Image from '../../../assets/images/Image';
 
-export default interface Aircraft {
+export default interface IAircraft {
 	image: Image;
 	name: string;
 	speed: number;
