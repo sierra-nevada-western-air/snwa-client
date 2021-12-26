@@ -1,0 +1,9 @@
+{
+	"recommendations": [
+		"eamodio.gitlens",
+		"webben.browserslist",
+		"streetsidesoftware.code-spell-checker",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
+	]
+}
