@@ -15,6 +15,39 @@ const AircraftIndex: React.FC = () => {
 			range: 3235,
 			title: 'The Regional Warrior',
 		},
+		{
+			name: 'Boeing 737-700',
+			capacity: 144,
+			speed: 0.781,
+			image: {
+				src: '7377.jpg',
+				alt: '737-700',
+			},
+			range: 3010,
+			title: 'The Workhorse',
+		},
+		{
+			name: 'Boeing 737-800',
+			capacity: 174,
+			speed: 0.789,
+			image: {
+				src: '7378.jpg',
+				alt: '737-800',
+			},
+			range: 2935,
+			title: 'The Route Winner',
+		},
+		{
+			name: 'Boeing 737-900ER',
+			capacity: 192,
+			speed: 0.79,
+			image: {
+				src: '7379.jpg',
+				alt: '737-900ER',
+			},
+			range: 2950,
+			title: 'The Low Cost Leader',
+		},
 	];
 
 	return (
@@ -28,7 +61,7 @@ const AircraftIndex: React.FC = () => {
 						</Title>
 						<article>
 							We fly the Boeing 737 family of aircraft. Utilizing different sizes of each aircraft allows us to serve a variety of
-							markets.
+							markets. Every aircraft is equipped with in-seat power, seat-back IFE, and high-speed WiFi. That's our Fare-untee! &trade;
 						</article>
 						{aircraft.map((airplane) => {
 							return <AircraftArticle key={airplane.capacity} aircraft={airplane} />;

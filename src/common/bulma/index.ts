@@ -14,6 +14,7 @@ import Hero from './layout/Hero';
 import Section from './layout/Section';
 import Figure from './elements/Figure';
 import Level from './layout/Level';
+import Subtitle from './elements/Subtitle';
 
 export {
 	Content,
@@ -32,4 +33,5 @@ export {
 	TitleOptions,
 	Figure,
 	Level,
+	Subtitle,
 };

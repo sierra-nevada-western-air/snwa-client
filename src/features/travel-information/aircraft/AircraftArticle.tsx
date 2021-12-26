@@ -1,5 +1,4 @@
-import { Column, Columns, Content, Title, TitleOptions } from '../../../common/bulma';
-import Figure from '../../../common/bulma/elements/Figure';
+import { Column, Columns, Content, Figure, Subtitle, Title, TitleOptions } from '../../../common/bulma';
 import Aircraft from './Aircraft';
 
 const AircraftArticle: React.FC<AircraftArticleProps> = ({ aircraft }) => {
@@ -8,7 +7,8 @@ const AircraftArticle: React.FC<AircraftArticleProps> = ({ aircraft }) => {
 			<Columns>
 				<Column options="is-one-quarter is-flex">
 					<Content options="is-flex is-justify-content-center is-flex-direction-column">
-						<Title size={TitleOptions.Five}>{aircraft.name}</Title>
+						<Title size={TitleOptions.Four}>{aircraft.name}</Title>
+						<Subtitle size={TitleOptions.Six}>{aircraft.title}</Subtitle>
 						<p>
 							<strong>Capacity: </strong>
 							{aircraft.capacity} persons

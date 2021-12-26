@@ -43,7 +43,7 @@ const RouteMapSearchArticle: React.FC<RouteMapSearchArticleProps> = ({ airports,
 			</div>
 			{from &&
 				to.map((toAirport): ReactNode => {
-					return <RouteMapSearchPanel departure={from} arrival={toAirport} />;
+					return <RouteMapSearchPanel key={toAirport.id} departure={from} arrival={toAirport} />;
 				})}
 		</article>
 	);
