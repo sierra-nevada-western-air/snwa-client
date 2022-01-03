@@ -63,7 +63,7 @@ const AircraftIndex: React.FC = () => {
 							We fly the Boeing 737 family of aircraft. Utilizing different sizes of each aircraft allows us to serve a variety of
 							markets. Every aircraft is equipped with in-seat power, seat-back IFE, and high-speed WiFi. That's our Fare-untee! &trade;
 						</article>
-						{aircraft.map((airplane) => {
+						{aircraft.map((airplane): JSX.Element => {
 							return <AircraftArticle key={airplane.capacity} aircraft={airplane} />;
 						})}
 					</Section>
