@@ -1,27 +1,5 @@
-@charset "utf-8";
+@import './font.scss';
+@import './colors.scss';
+@import './footer.scss';
 
-$amethyst: #8f65b8;
-$amethyst-invert: findColorInvert($amethyst);
-
-$cyber-grape: #443c68;
-$cyber-grape-invert: findColorInvert($cyber-grape);
-
-$prussian-blue: #092234;
-$prussian-blue-invert: findColorInvert($prussian-blue);
-
-$custom-colors: (
-	'secondary': (
-		$amethyst,
-		$amethyst-invert,
-	),
-	'tertiary': (
-		$cyber-grape,
-		$cyber-grape-invert,
-	),
-	'quaternary': (
-		$prussian-blue,
-		$prussian-blue-invert,
-	),
-);
-
-@import '../../../node_modules/bulma/bulma.sass';
+@import '../../node_modules/bulma/bulma.sass';
