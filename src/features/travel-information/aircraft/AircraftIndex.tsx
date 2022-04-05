@@ -5,17 +5,6 @@ import AircraftArticle from './AircraftArticle';
 const AircraftIndex: React.FC = () => {
 	const aircraft: Array<IAircraft> = [
 		{
-			name: 'Boeing 737-600',
-			capacity: 120,
-			speed: 0.785,
-			image: {
-				src: '7376.jpg',
-				alt: '737-600',
-			},
-			range: 3235,
-			title: 'The Regional Warrior',
-		},
-		{
 			name: 'Boeing 737-700',
 			capacity: 144,
 			speed: 0.781,
@@ -36,17 +25,6 @@ const AircraftIndex: React.FC = () => {
 			},
 			range: 2935,
 			title: 'The Route Winner',
-		},
-		{
-			name: 'Boeing 737-900ER',
-			capacity: 192,
-			speed: 0.79,
-			image: {
-				src: '7379.jpg',
-				alt: '737-900ER',
-			},
-			range: 2950,
-			title: 'The Low Cost Leader',
 		},
 	];
 

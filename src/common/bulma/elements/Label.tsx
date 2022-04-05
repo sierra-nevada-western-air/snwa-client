@@ -1,6 +1,6 @@
-const label: React.FC<labelProps> = ({ children, labelFor }) => {
+const label: React.FC<labelProps> = ({ children, labelFor, options }) => {
 	return (
-		<label className="label" htmlFor={labelFor}>
+		<label className={`label ${options}`} htmlFor={labelFor}>
 			{children}
 		</label>
 	);
@@ -9,6 +9,7 @@ const label: React.FC<labelProps> = ({ children, labelFor }) => {
 interface labelProps {
 	children: string;
 	labelFor: string;
+	options?: string;
 }
 
 export default label;

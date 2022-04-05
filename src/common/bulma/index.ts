@@ -15,6 +15,7 @@ import Section from './layout/Section';
 import Figure from './elements/Figure';
 import Level from './layout/Level';
 import Subtitle from './elements/Subtitle';
+import Box from './elements/Box';
 
 export {
 	Content,
@@ -34,4 +35,5 @@ export {
 	Figure,
 	Level,
 	Subtitle,
+	Box,
 };

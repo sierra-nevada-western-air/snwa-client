@@ -9,6 +9,9 @@ const TravelInformationIndex: React.FC = () => {
 			<Link to={SitePaths.AircraftIndex} className="is-link">
 				Aircraft
 			</Link>
+			<Link to={SitePaths.FaresIndex} className="is-link">
+				Fares
+			</Link>
 		</Section>
 	);
 };

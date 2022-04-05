@@ -2,7 +2,7 @@
 	"overrides": [
 		{
 			"files": ["**/*.ts?(x)"],
-			"extends": ["react-app", "react-app/jest", "plugin:prettier/recommended"],
+			"extends": ["react-app", "react-app/jest", "plugin:prettier/recommended", "plugin:testing-library/react", "plugin:jest-dom/recommended"],
 			"rules": {
 				"@typescript-eslint/explicit-function-return-type": [1],
 				"react/self-closing-comp": [
