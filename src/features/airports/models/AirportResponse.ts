@@ -1,7 +1,7 @@
-import AirportPosition from './AirportPosition';
+import AirportPosition from "./AirportPosition";
 
 export default interface AirportResponse {
-	id: string;
-	name: string;
-	position: AirportPosition;
+  id: string;
+  name: string;
+  position: AirportPosition;
 }

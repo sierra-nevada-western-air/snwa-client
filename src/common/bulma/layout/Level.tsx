@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 const Level: React.FC<LevelProps> = ({ children }) => {
-	return <div className="level">{children}</div>;
+  return <div className="level">{children}</div>;
 };
 
 interface LevelProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export default Level;

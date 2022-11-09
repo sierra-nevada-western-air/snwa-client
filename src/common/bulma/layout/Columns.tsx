@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 const Columns: React.FC<ColumnsProps> = ({ children }) => {
-	return <div className="columns">{children}</div>;
+  return <div className="columns">{children}</div>;
 };
 
 interface ColumnsProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export default Columns;

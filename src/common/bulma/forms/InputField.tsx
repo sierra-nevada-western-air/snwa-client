@@ -1,11 +1,11 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 const InputField: React.FC<InputFieldProps> = ({ children }) => {
-	return <div className="field">{children}</div>;
+  return <div className="field">{children}</div>;
 };
 
 interface InputFieldProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 export default InputField;
