@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "lint": "eslint --fix \"src/**/*.{ts,tsx}\"",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "npx pretty-quick"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
